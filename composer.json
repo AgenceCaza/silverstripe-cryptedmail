@@ -1,8 +1,8 @@
 {
-    "name": "intwebg/silverstripe-extrameta",
-    "description": "Add extra meta in the head of website",
+    "name": "intwebg/silverstripe-cryptedmail",
+    "description": "Protect email from robot and spammer",
     "type": "silverstripe-vendormodule",
-    "keywords": ["silverstripe", "meta", "icon", "share"],
+    "keywords": ["silverstripe", "email", "protect"],
 	  "license": "BSD-3-Clause",
     "authors": [
     {
@@ -15,10 +15,10 @@
     },
     "autoload": {
       "psr-4": {
-          "intwebg\\searchpage\\": "src/"
+          "intwebg\\cryptedmail\\": "src/"
       }
     },
     "extra": {
-      "installer-name": "extrameta"
+      "installer-name": "cryptedmail"
     }
 }
