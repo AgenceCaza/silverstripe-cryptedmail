@@ -13,7 +13,3 @@ In template
 
 In HTMLEditorField
 <code>[CryptedMail value='user@domain.tld']</code>
-
-
-<h1>Member Modal Session for Silverstripe</h1>
-<p>A lightweight php/js stay login/logout modal to prevent users in frontend site.</p>
