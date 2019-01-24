@@ -1,3 +1,7 @@
 SilverStripe\ORM\FieldType\DBField:
   extensions:
     - CryptedMailStringExtension
+
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - CryptedMailRequirementExtension
