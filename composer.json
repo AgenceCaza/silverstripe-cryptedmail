@@ -19,6 +19,9 @@
       }
     },
     "extra": {
-      "installer-name": "cryptedmail"
+      "installer-name": "cryptedmail",
+      "expose": [
+          "client"
+      ]
     }
 }
