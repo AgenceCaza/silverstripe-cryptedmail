@@ -15,13 +15,8 @@ class CryptedMailStringExtension extends Extension {
 	  $dom = explode(".", $a1[1]);
 
 	  if (isset($dom[2])) {
-	    $dom2 = $dom[2];
-
-	    if (isset($dom2)) {
-	      $extradom = ".".$dom2;
-	    }
-
-	}
+	      $extradom = ".".$dom[2];
+	  }
 
 	return DBField::create_field('HTMLVarchar','
 		<a href="#" class="cryptedmail"
@@ -32,6 +27,6 @@ class CryptedMailStringExtension extends Extension {
 		 </a>'
 	 );
 
- 	}
+  }
 
 }
