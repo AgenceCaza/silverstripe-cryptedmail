@@ -8,17 +8,12 @@ ShortcodeParser::get('default')->register('CryptedMail',
 	$extradom = "";
 
 	$email = $arguments['value'];
-  $a1 = explode("@", $email);
-  $username = $a1[0];
+  	$a1 = explode("@", $email);
+	$username = $a1[0];
 	$dom = explode(".", $a1[1]);
 
 	if (isset($dom[2])) {
-		$dom2 = $dom[2];
-
-		if (isset($dom2)) {
-			$extradom = ".".$dom2;
-		}
-
+		$extradom = ".".$dom[2];
 	}
 
   return '
