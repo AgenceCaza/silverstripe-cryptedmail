@@ -12,12 +12,12 @@ class CryptedMailStringExtension extends Extension {
 	  $email = $this->owner->value;
 	  $a1 = explode("@", $email);
 	  $username = $a1[0];
-	  $dom = explode(".", $a1[1]);
+	  $domain = $a1[1];
 
 	return DBField::create_field('HTMLVarchar','
 		<a href="#" class="cryptedmail"
 			 data-name="'.$username.'"
-			 data-domain="'.$a1[1].'"
+			 data-domain="'.$domain.'"
 			 onclick="window.location.href = \'mailto:\' + this.dataset.name + \'@\' + this.dataset.domain; return false;">
 		 </a>'
 	 );
@@ -32,12 +32,12 @@ class CryptedMailStringExtension extends Extension {
 		$email = $this->owner->value;
 		$a1 = explode("@", $email);
 		$username = $a1[0];
-		$dom = explode(".", $a1[1]);
+		$domain = $a1[1];
 
 	return DBField::create_field('HTMLVarchar','
 		class="cryptedmailnotag"
 			 data-name="'.$username.'"
-			 data-domain="'.$a1[1].'"
+			 data-domain="'.$domain.'"
 			 onclick="window.location.href = \'mailto:\' + this.dataset.name + \'@\' + this.dataset.domain; return false;"'
 	 );
 
