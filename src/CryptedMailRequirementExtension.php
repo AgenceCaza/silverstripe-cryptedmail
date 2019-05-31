@@ -7,7 +7,7 @@ class CryptedMailRequirementExtension extends Extension {
 
 	public function onBeforeInit() {
 
-		Requirements::CSS('intwebg/silverstripe-cryptedmail:client/cryptedmail.css');
+		Requirements::CSS('agencecaza/silverstripe-cryptedmail:client/cryptedmail.css');
 
 	}
 }
